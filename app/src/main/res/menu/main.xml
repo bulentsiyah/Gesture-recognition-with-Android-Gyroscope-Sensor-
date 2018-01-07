@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bulentsiyah.zzdepo.gesturerecognition.MainActivity" >
+
+    <item
+        android:id="@+id/action_hareketlistesi"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/list"
+        android:title="Hareket Listesi"/>
+
+</menu>

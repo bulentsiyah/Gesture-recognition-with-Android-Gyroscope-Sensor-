@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/theme_color_blue" >
+
+        <TextView
+            android:id="@+id/textViewUyariTitle_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Bilgi"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/theme_color_white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:src="@drawable/dialog_info" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1_blue"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/text_dialog_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="10dp"
+            android:text="uyarı metni"
+            android:textAppearance="?android:attr/textAppearanceSmallInverse"
+            android:textColor="@color/theme_color_black" />
+
+        <Button
+            android:id="@+id/btn_dialog_blue"
+            style="@style/CustomStyleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_dialog_blue"
+            android:onClick="button_register"
+            android:text="Tamam"
+            android:textColor="@color/theme_color_white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

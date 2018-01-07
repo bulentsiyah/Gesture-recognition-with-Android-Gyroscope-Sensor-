@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerVertical="true"
+        android:contentDescription="Rota SOP Image"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:id="@+id/textViewGorevAdii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:gravity="top|left"
+        android:maxLines="1"
+        android:paddingTop="10dp"
+        android:text="Görev Adı"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/theme_color_blue" 
+        />
+
+<!-- 
+    <Button
+        android:id="@+id/ButtonDetail"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/desc"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:drawableLeft="@drawable/order_info" />
+        
+         -->
+
+    <TextView
+        android:id="@+id/textViewKonum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewGorevAdii"
+        android:layout_below="@+id/textViewGorevAdii"
+        android:gravity="bottom|left"
+        android:paddingLeft="5dp"
+        android:text="Konum: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+         android:textColor="@color/theme_color_red"
+        />
+
+</RelativeLayout>

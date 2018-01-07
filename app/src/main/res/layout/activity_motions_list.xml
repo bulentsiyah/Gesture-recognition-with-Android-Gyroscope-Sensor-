@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.bulentsiyah.gesturerecognitionwithandroid.MotionsList" >
+
+    <Button
+        android:id="@+id/buttonOnayiste"
+        style="@style/CustomStyleButtonAlertRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/delete"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/delete"
+        android:onClick="button_liste"
+        android:text="Tümünü Temizle" />
+
+    <ListView
+        android:id="@+id/listViewsave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonOnayiste"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+    </ListView>
+
+</RelativeLayout>
